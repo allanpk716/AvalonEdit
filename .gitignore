@@ -6,3 +6,6 @@ bin/
 /packages/AvalonEdit.Sample
 /packages/NUnit.2.6.3
 /Documentation/IntelliSense
+/*.sdf
+/*.opendb
+/.vs/ICSharpCode.AvalonEdit/v14/*.suo

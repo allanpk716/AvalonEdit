@@ -37,8 +37,10 @@ namespace ICSharpCode.AvalonEdit.Highlighting
 		{
 			hlm.RegisterHighlighting("XmlDoc", null, "XmlDoc.xshd");
 			hlm.RegisterHighlighting("C#", new[] { ".cs" }, "CSharp-Mode.xshd");
-			
-			hlm.RegisterHighlighting("JavaScript", new[] { ".js" }, "JavaScript-Mode.xshd");
+
+            hlm.RegisterHighlighting("HCL", new[] { ".hcl" }, "HCL-Mode.xshd");
+
+            hlm.RegisterHighlighting("JavaScript", new[] { ".js" }, "JavaScript-Mode.xshd");
 			hlm.RegisterHighlighting("HTML", new[] { ".htm", ".html" }, "HTML-Mode.xshd");
 			hlm.RegisterHighlighting("ASP/XHTML", new[] { ".asp", ".aspx", ".asax", ".asmx", ".ascx", ".master" }, "ASPX.xshd");
 			

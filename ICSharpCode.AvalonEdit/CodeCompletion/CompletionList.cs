@@ -92,7 +92,11 @@ namespace ICSharpCode.AvalonEdit.CodeCompletion
 			listBox = GetTemplateChild("PART_ListBox") as CompletionListBox;
 			if (listBox != null) {
 				listBox.ItemsSource = completionData;
-			}
+
+                if (completionData.Count > 0) {
+                    listBox.SelectIndex(0);
+                }
+            }
 		}
 		
 		/// <summary>
