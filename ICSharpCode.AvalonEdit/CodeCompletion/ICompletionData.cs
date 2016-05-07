@@ -58,16 +58,21 @@ namespace ICSharpCode.AvalonEdit.CodeCompletion
 		/// which the user is accessing most frequently.
 		/// </summary>
 		double Priority { get; }
-		
-		/// <summary>
-		/// Perform the completion.
-		/// </summary>
-		/// <param name="textArea">The text area on which completion is performed.</param>
-		/// <param name="completionSegment">The text segment that was used by the completion window if
-		/// the user types (segment between CompletionWindow.StartOffset and CompletionWindow.EndOffset).</param>
-		/// <param name="insertionRequestEventArgs">The EventArgs used for the insertion request.
-		/// These can be TextCompositionEventArgs, KeyEventArgs, MouseEventArgs, depending on how
-		/// the insertion was triggered.</param>
-		void Complete(TextArea textArea, ISegment completionSegment, EventArgs insertionRequestEventArgs);
+
+        /// <summary>
+        /// 赋值
+        /// </summary>
+        int Value{ get; set; }
+
+        /// <summary>
+        /// Perform the completion.
+        /// </summary>
+        /// <param name="textArea">The text area on which completion is performed.</param>
+        /// <param name="completionSegment">The text segment that was used by the completion window if
+        /// the user types (segment between CompletionWindow.StartOffset and CompletionWindow.EndOffset).</param>
+        /// <param name="insertionRequestEventArgs">The EventArgs used for the insertion request.
+        /// These can be TextCompositionEventArgs, KeyEventArgs, MouseEventArgs, depending on how
+        /// the insertion was triggered.</param>
+        void Complete(TextArea textArea, ISegment completionSegment, EventArgs insertionRequestEventArgs);
 	}
 }
