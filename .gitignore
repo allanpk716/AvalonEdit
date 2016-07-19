@@ -9,3 +9,4 @@ bin/
 /*.sdf
 /*.opendb
 /.vs/ICSharpCode.AvalonEdit/v14/*.suo
+/ICSharpCode.AvalonEdit/*.tmp_proj
